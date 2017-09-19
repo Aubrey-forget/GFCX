@@ -1,0 +1,50 @@
+<!--精品案例的详情页面  -->
+<view>
+<!--案例的详情  -->
+  <view class='head'>
+    <image src='/img/imges/{{id*1+9}}.png'></image>
+      <view>
+        <view class='details'>{{arr[id]}}</view>
+        <image id='star' src='/img/star_bg.png'></image>
+        <view class='media'>富媒体 \r\n\r\n工具</view>
+        <view class='mold'>
+          <view>
+            <text>美食</text>
+          </view>
+          <view>
+            <text>交友</text>
+          </view>
+        </view>
+      </view>
+  </view>
+  <!--轮播图  -->
+  <view>
+    <swiper class='cycle' vertical='{{true}}' indicator-dots="{{true}}">
+      <block wx:for="{{mold}}">
+        <swiper-item>
+          <image src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view> 
+</view>  
+<view id="content">
+<!--小程序的介绍、功能  -->
+  <block wx:for="{{list}}">
+    <view class='list'>
+      <view>
+        <image class='img' src='/img/pot_img.png'></image>
+        <text style='font-size:36rpx;padding-left:20rpx'>{{item.title}}</text>
+      </view>
+      <text class='text'>{{item.time}}{{item.content}}</text>
+    </view>
+  </block>
+  <view class='list'>
+    <image class='img' src='/img/pot_img.png'></image>
+    <text style='font-size:30rpx;padding-left:20rpx'>小程序二维码</text>
+    <view>
+      <image style='width:300rpx;height:300rpx;' src='/img/two_logo.jpg'></image>
+    </view>
+  </view>
+</view>
+

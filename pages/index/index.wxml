@@ -1,0 +1,58 @@
+<!--主页面  -->
+<!--  轮播图  -->
+<view>
+  <swiper class='figure' autoplay='{{true}}' indicator-dots='{{true}}' interval='2000' duration='500'>
+    <block wx:for="{{aaron}}">
+      <swiper-item>
+        <navigator url="../advisory/advisory?id={{index}}">
+          <image class='figure' src="{{item}}"></image>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--关于矢量、联系我们  -->
+<view class='contact'>
+  <image src='../../img/about_logo.png' class='aboutImg'></image>
+  <view class='regard rightLine' bindtap='toAbout'>
+    <text>{{name}}</text>
+    <text>\n{{name_English}}</text>
+  </view>
+  <image src='../../img/connect_logo.png' class='connectImg' bindtap='clk'></image>
+  <view bindtap='clk' class='regard'>
+    <text>{{us}}</text>
+    <text>\n{{us_English}}</text>
+  </view>
+</view>
+<view class='case'>
+  <!--精品案例  -->
+  <block wx:for="{{boutique}}" wx:for-item="item" wx:for-key="key">
+    <view class='boutique'>
+      <view>
+        <text>{{item.head}}</text>
+        <text>{{item.el}}</text>
+      </view>
+    </view>
+    <view class="cas">
+      <navigator url="../part/part?id={{index}}" hover-class='none' wx:for="{{item.cont}}" wx:for-item="item">
+        <view class='case1'>
+          <image class='img' src="{{item.img}}"></image>
+          <text>{{item.name}}</text>
+        </view>
+      </navigator>
+    </view>
+  </block>
+  <!-- 产品服务 -->
+  <view class='boutique'>
+    <view>
+      <text>产品服务</text>
+      <text>PRODUCT SERVICE</text>
+    </view>
+    <view id='box'>
+      <view wx:for="{{list}}">
+        <image src="{{item.src}}"></image>
+        <text>\n{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>

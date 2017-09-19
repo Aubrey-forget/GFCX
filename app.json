@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/refer/refer",
+    "pages/advisory/advisory",
+    "pages/part/part",
+    "pages/regard/regard"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "矢量科技",
+    "navigationBarTextStyle": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#ffffff",
+    "backgroundColor": "#000000",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "微页",
+        "iconPath": "/img/home.png",
+        "selectedIconPath": "/img/home_click.png"
+      },
+      {
+        "pagePath": "pages/refer/refer",
+        "text": "资讯",
+        "iconPath": "/img/info.png",
+        "selectedIconPath": "/img/info_click.png"
+      },
+      {
+        "pagePath": "pages/regard/regard",
+        "text": "关于我们",
+        "iconPath": "/img/aboutus.png",
+        "selectedIconPath": "/img/aboutus_click.png"
+      }
+    ]
+  }
+}

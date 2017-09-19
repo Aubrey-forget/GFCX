@@ -1,0 +1,53 @@
+.company {
+  font-size: 46rpx;
+  border-left: 8rpx solid #000;
+  margin-bottom: 24rpx;
+  padding-left: 24rpx;
+  font-weight: bold;
+}
+
+.companyDetail {
+  font-size: 32rpx;
+  margin-bottom: 50rpx;
+  text-indent:2rem;
+  line-height: 42rpx;
+}
+
+.content {
+  padding: 20rpx 50rpx;
+}
+
+.text text {
+  font-size: 32rpx;
+  display: block;
+  margin-top: 10rpx;
+}
+
+.box {
+  display: flex;
+  white-space: nowrap;
+  /* width: 100%;
+  height: 500rpx; */
+}
+
+.figure {
+  /* display: inline-block; */
+  width: 200rpx;
+  height: 250rpx;
+}
+.clear::after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clear{
+  zoom: 1;
+}
+.mini text{
+  float: left;
+}
+.mini button{
+  float: right;
+}

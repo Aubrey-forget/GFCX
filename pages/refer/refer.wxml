@@ -1,0 +1,11 @@
+<!--资讯页面  -->
+<view class="content">
+  <block wx:for="{{list}}">
+    <navigator url="../advisory/advisory?id={{index}}">
+      <view class='cont'>
+        <image src='{{item.src}}'></image>
+        <text>{{item.name}}</text>
+      </view>
+    </navigator> 
+  </block>
+</view>

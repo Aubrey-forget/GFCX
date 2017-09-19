@@ -1,0 +1,29 @@
+<!--<view>
+   <scroll-view scroll-x="true" class='box'>
+    <block wx:for="{{aaron}}">
+      <image class='figure' src="{{item}}"></image>
+    </block>
+  </scroll-view> 
+</view>-->
+<!--关于我们页面  -->
+<view class='content'>
+  <view class='company'>公司简介</view>
+  <view class='companyDetail'>
+    海南矢量科技有限公司是一家专注于移动互联网软硬件研发的服务企业，为顾客提供全面的移动互联网技术解决方案，一站式的安卓APP开发、iosAPP开发、H5APP开发、智能硬件开发、小程序开发、网站开发服务。
+  </view>
+  <view class='companyDetail'>
+    经过多年的积累，矢量科技在智能硬件领域、电子商务领域、社交领域、直播领域、医疗领域、物流O2O领域、智能办公领域拥有一系列的成功案例并形成了成熟的解决方案，为各行企业向移动互联网转型奠定了坚实的基础
+  </view>
+  <view class='company'>联系我们</view>
+  <!--地图  -->
+   <map id="map" longitude="120.669500" latitude="31.296100" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300rpx;"></map>
+   <!--联系方式、地址  -->
+  <view class='text'>
+    <text>电话：18608989950</text>
+    <view class='clear mini'>
+       <text>联系人：张先生</text>
+       <button type='primary' bindtap='chagae' size='mini'>导航</button>
+    </view>
+    <text>联系地址：江苏省苏州市吴中区金鸡湖大道1355号（国际科技园三期八楼） </text>
+  </view>
+</view> 

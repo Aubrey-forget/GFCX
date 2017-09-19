@@ -1,0 +1,16 @@
+<!--资讯的详情页面  -->
+<view class='content'>
+  <view class='top'>
+    <image src="/img/imges/{{13+1*id}}.jpg"></image>
+    <text class='text'>
+      {{list[id].title}}
+      <text>{{list[id].time}}</text>
+    </text>
+  </view>
+  <text space="nbsp" class='indent'>
+    {{list[id].content[0]}}
+  </text>
+  <text space="nbsp" class='indent'>
+    {{list[id].content[1]}}
+  </text>
+</view>
